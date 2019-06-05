@@ -22,7 +22,7 @@
 					<input id="email" name="email" type="text" value=""> 
 					<label class="block-label">패스워드</label>
 					<input name="password" type="password" value="">
-					<c:choose>
+					<c:choose>	
 						<c:when test='${requestScope.result == "fail"}'>
 							<p>로그인이 실패 했습니다.</p>
 						</c:when>
