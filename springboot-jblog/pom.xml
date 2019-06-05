@@ -3,7 +3,6 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-
 	<parent>
 		<groupId>com.cafe24</groupId>
 		<artifactId>springboot</artifactId>
@@ -71,7 +70,7 @@
 		<finalName>${artifactId}</finalName>
 		<plugins>
 			<plugin>
-				<artifactId>maven-war-plugin</artifactId> <!-- 플러그인은 항상 버전을 부모가 가지고있음 -->
+				<artifactId>maven-war-plugin</artifactId>
 				<configuration>
 					<warSourceDirectory>src/main/webapp</warSourceDirectory>
 				</configuration>
@@ -87,6 +86,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+
 	</build>
 
 </project>
