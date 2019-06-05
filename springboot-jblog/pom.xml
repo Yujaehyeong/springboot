@@ -11,7 +11,6 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-
 	<dependencies>
 		<!-- Spring Web(MVC) -->
 		<dependency>
@@ -25,37 +24,26 @@
 			<artifactId>spring-boot-starter-aop</artifactId>
 		</dependency>
 
-		<!-- Mybatis Starter -->  <!-- 나머지는 부모프로젝트에서 버전을 가지고 있지만 얘는 외부용이기 때문에 버전 설정 -->
+		<!-- MyBatis Starter -->
 		<dependency>
 			<groupId>org.mybatis.spring.boot</groupId>
 			<artifactId>mybatis-spring-boot-starter</artifactId>
 			<version>1.3.2</version>
 		</dependency>
-
-		<!-- Common DBCP --> <!-- 따로 부트용 스타터가 없음 -->
+	
+		<!-- Common DBCP -->
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
 			<version>1.4</version>
 		</dependency>
-
-		<!-- common fileupload -->
-		<dependency>
-			<groupId>commons-fileupload</groupId>
-			<artifactId>commons-fileupload</artifactId>
-			<version>1.2.1</version>
-		</dependency>
-		<dependency>
-			<groupId>commons-io</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>1.4</version>
-		</dependency>
+	
 		<!-- mariadb java client -->
 		<dependency>
 			<groupId>org.mariadb.jdbc</groupId>
 			<artifactId>mariadb-java-client</artifactId>
-		</dependency>
-
+		</dependency>		
+		
 		<!-- JSTL -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -65,6 +53,8 @@
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
 		</dependency>
+		
+		
 	</dependencies>
 
 	<build>
@@ -85,9 +75,8 @@
 					<username>admin</username>
 					<password>manager</password>
 				</configuration>
-			</plugin>
+			</plugin>			
 		</plugins>
-
+	
 	</build>
-
 </project>
