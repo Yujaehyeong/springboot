@@ -43,7 +43,7 @@
 			<groupId>org.mariadb.jdbc</groupId>
 			<artifactId>mariadb-java-client</artifactId>
 		</dependency>
-	
+		
 		<!-- JSTL -->
 		<dependency>
 			<groupId>javax.servlet</groupId>
@@ -73,9 +73,8 @@
 					<username>admin</username>
 					<password>manager</password>
 				</configuration>
-			</plugin>			
+			</plugin>
 		</plugins>
-	
-	</build>
 
+	</build>
 </project>
