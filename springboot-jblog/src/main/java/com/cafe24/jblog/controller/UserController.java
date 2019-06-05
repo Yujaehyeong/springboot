@@ -22,10 +22,12 @@ public class UserController {
 	}
 	
 	@RequestMapping(value= "/auth", method=RequestMethod.POST)
-	public String ok() {
-		System.out.println(123123123);
-		
-		return "user/login";
+	public String auth() {
+		return "main/index";
+	}
+	@RequestMapping("/logout")
+	public String logout() {
+		return "main/index";
 	}
 	
 	@RequestMapping(value= "/join", method=RequestMethod.POST)
